@@ -87,7 +87,7 @@ const ReservationPage = () => {
                 <input type={"text"} className={"phno_input"} placeholder={"Phone Number"} onChange={(e) => handleInputChange({ target: { name: "phone", value: e.target.value } })}/>
                 <input type={"text"} className={"no_of_people_input"} placeholder={"Number of Persons"} onChange={(e) => handleInputChange({ target: { name: "persons", value: e.target.value } })} />
                 <div className={"dropdown"}>
-                    <select style={{minWidth:500,height:30}} className={"select-day"} onChange={(e) => handleInputChange({ target: { name: "day", value: e.target.value } })}>
+                    <select style={{width:500,height:30}} className={"select-day"} onChange={(e) => handleInputChange({ target: { name: "day", value: e.target.value } })}>
                         <option>Reservation Day</option>
                         <option>Sunday</option>
                         <option>Monday</option>

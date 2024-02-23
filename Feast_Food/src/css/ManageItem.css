@@ -169,13 +169,13 @@
 .item-name label,.item-name input{
     display: block;
 }
-.item-price{
+.item-price1{
     position: absolute;  top: 12rem;  right: 2rem; font-size: 1.7rem;
 }
-.item-price input{
+.item-price1 input{
     width: 13vw;   height: 5.7vh;  padding-left: 0.8rem;  border-color: #281e07; border-radius: 7px;
 }
-.item-price label,.item-price input{
+.item-price1 label,.item-price1 input{
     display: block;
 }
 .item-image{

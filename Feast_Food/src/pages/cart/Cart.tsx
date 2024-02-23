@@ -56,7 +56,6 @@ const Cart = () => {
             },onSuccess(){refetch()}
         }
     )
-
     // Calculate total cart price
     let cartTotal = cartData?.data.reduce(
         (total, item) => total + item.total_price * item.quantity,
@@ -82,12 +81,10 @@ const Cart = () => {
                     <p>Quantity</p>
                     <p>Subtotal</p>
                     <p>Remove</p>
-
                 </div>
 
                 <div className={"cart-items-container"}>
-                    {
-                        cartData?.data.map((i) =>{
+                    {cartData?.data.map((i) =>{
                             return(
                                 <div className={"items-info"} key={i?.id}>
                                     <div className={"title"}>
@@ -99,21 +96,13 @@ const Cart = () => {
                                     </div>
 
                                     <div className={"add-minus-quantity"}>
-                                        <i
-                                            className={"fas fa-minus minus"}
-                                            onClick={() => {
+                                        <i className={"fas fa-minus minus"} onClick={() => {
                                                 const newQuantity = Math.max(0, i?.quantity - 1);
-                                                updateQuantity(i?.id, newQuantity);
-                                            }}
-                                        ></i>
+                                                updateQuantity(i?.id, newQuantity);}}></i>
                                         <input type={"text"} value={i?.quantity} readOnly />
-                                        <i
-                                            className={"fas fa-plus add"}
-                                            onClick={() => {
+                                        <i className={"fas fa-plus add"} onClick={() => {
                                                 const newQuantity = i?.quantity + 1;
-                                                updateQuantity(i?.id, newQuantity);
-                                            }}
-                                        ></i>
+                                                updateQuantity(i?.id, newQuantity);}}></i>
                                     </div>
 
                                     <div className={"sub-total"}>

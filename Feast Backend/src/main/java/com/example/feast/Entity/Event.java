@@ -3,12 +3,6 @@ package com.example.feast.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalTime;
-import java.util.Date;
-import java.util.List;
-
-import java.util.Set;
-
 @Entity
 @Table(name="events")
 @Getter

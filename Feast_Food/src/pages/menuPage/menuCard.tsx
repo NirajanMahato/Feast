@@ -34,15 +34,12 @@ const MenuCard = ({ menuData }) => {
         };
         console.log(payload)
         // Call the mutation function with the payload
-
         useApiCall.mutate(payload);
     };
 
     const showLoginPopup = () => {
         alert("Please log-in to add items to your cart."); // You can replace this with a modal or other UI component
     };
-
-
     return (
         <>
             <section className="menu-card--cointainer">
@@ -73,5 +70,4 @@ const MenuCard = ({ menuData }) => {
         </>
     );
 };
-
 export default MenuCard;

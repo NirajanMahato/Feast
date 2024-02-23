@@ -205,7 +205,7 @@ const ManageCategory: React.FC = () =>  {
                             {/*    <label>ID</label>*/}
                             {/*    <input type={"number"} placeholder={"Enter ID"}/>*/}
                             {/*</div>*/}
-                            <div className={"category-name"}>
+                            <div className={"category-name1"}>
                                 <label>Category Name</label>
                                 <input type={"text"} placeholder={"Enter Category Name"} {...register("name",{required:"Category Name is required!!"})}/>
                                 <h6 style={{paddingLeft:"3px"}}>{errors?.name?.message}</h6>

@@ -7,7 +7,6 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ filterItem, menuList }) => {
 
-    // console.log(menuList)
     return (
         <>
             <nav className="menu-navbar">

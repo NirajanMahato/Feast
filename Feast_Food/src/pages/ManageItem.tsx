@@ -229,7 +229,7 @@ const ManageItem: React.FC = () => {
                                 <input type={"text"} placeholder={"Enter item Name"} {...register("itemName",{required:"Item Name is required!!"})}/>
                                 <h6 style={{paddingLeft:"3px"}}>{errors?.itemName?.message}</h6>
                             </div>
-                            <div className={"item-price"}>
+                            <div className={"item-price1"}>
                                 <label>Price</label>
                                 <input type={"number"} placeholder={"Enter the Price"} {...register("itemPrice",{required:"Price is required!!"})}/>
                                 <h6 style={{paddingLeft:"3px"}}>{errors?.itemPrice?.message}</h6>
